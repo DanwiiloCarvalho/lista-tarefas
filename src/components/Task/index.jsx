@@ -6,7 +6,7 @@ export function Task({title, duration}) {
             <h3>{title}</h3>
             <p>Duração: {duration}</p>
             <div className="icons">
-                <span class="material-symbols-outlined">bookmark_added</span><span class="material-symbols-outlined">delete</span>
+                <span className="material-symbols-outlined">bookmark_added</span><span className="material-symbols-outlined">delete</span>
             </div>
         </article>
     );

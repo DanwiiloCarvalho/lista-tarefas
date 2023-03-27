@@ -1,12 +1,13 @@
 import './Todolist.css';
 import { Task } from '../Task';
 
-export function Todolist() {
+export function Todolist({tasks}) {
+  
     return (
         <section className="todolist">
             <h2>Lista de tarefas:</h2>
-            <Task title="Minha nova tarefa" duration="4h" />
-            <Task title="Minha nova tarefa 2" duration="5h" />
+
+            {tasks.map(task => <Task title={task.title} duration={task.duration}/>)}
         </section>
     );
 }

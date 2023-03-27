@@ -19,6 +19,8 @@ div.input-group > input {
     border-radius: 2px;
     padding: 0px 5px;
     background-color: rgb(47, 48, 59);
+    color: white;
+    font-size: 1rem;
 }
 
 div.input-group > input::placeholder {

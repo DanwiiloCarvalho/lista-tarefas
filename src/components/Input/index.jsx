@@ -1,9 +1,10 @@
 import './Input.css'
-export function Input({labelText, placeholderText}) {
+export function Input({callbackParent, id, labelText, placeholderText}) {
+
     return (
         <div className='input-group'>
             <label htmlFor="input">{labelText}</label>
-            <input id="input" type="text" placeholder={placeholderText}/>
+            <input id={id} type="text" placeholder={placeholderText} onChange={e => callbackParent(e.target.value)}/>
         </div>
     )
 }
