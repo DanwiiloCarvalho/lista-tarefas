@@ -1,0 +1,12 @@
+/*Mobile First*/
+
+button.create {
+    width: 100%;
+    padding: 15px 0px;
+    margin: 10px 0px;
+    color: white;
+    border: 1px solid rgb(27, 27, 27);
+    background-color: rgb(41, 41, 49);
+    cursor: pointer;
+    font-weight: 600;
+}

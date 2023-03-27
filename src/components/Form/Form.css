@@ -1,0 +1,12 @@
+/*Mobile First*/
+
+section.form {
+    border-bottom: 1px solid rgb(32, 31, 31);
+    padding: 15px 25px;
+}
+
+section.form > h2 {
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
