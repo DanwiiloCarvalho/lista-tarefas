@@ -3,6 +3,7 @@
 section.form {
     border-bottom: 1px solid rgb(32, 31, 31);
     padding: 15px 25px;
+    /* padding: 5% 8%; */
 }
 
 section.form > h2 {

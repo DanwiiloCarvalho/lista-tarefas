@@ -25,3 +25,14 @@ div.input-group > input::placeholder {
     color: rgb(109, 109, 122);
     font-weight: 600;
 }
+
+@media screen and (min-width: 768px) {
+    div.input-group > label {
+        font-size: 1.1rem;
+        padding-bottom: 5px;
+    }
+
+    div.input-group > input {
+        height: 45px;
+    }
+}
