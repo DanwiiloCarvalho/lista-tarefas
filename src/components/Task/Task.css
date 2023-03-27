@@ -1,0 +1,27 @@
+/*Mobile First*/
+
+article.task {
+    padding: 0px 25px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 35px;
+}
+
+article.task > h3 {
+    color: rgb(241, 102, 126);
+}
+
+article.task > p {
+    color: white;
+}
+
+
+article.task > div.icons > span {
+    color: white;
+}
+
+article.task > div.icons > span:last-child {
+    margin-left: 15px;
+}
