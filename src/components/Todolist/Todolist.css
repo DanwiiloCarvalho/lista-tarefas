@@ -3,3 +3,8 @@ section.todolist > h2 {
     text-align: center;
     padding: 15px 0px;
 }
+
+section.todolist > p {
+    color: white;
+    text-align: center;
+}

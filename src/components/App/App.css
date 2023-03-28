@@ -10,7 +10,7 @@ main#container {
     main#container {
         width: 60%;
         min-height: max-content;
-        margin: auto;
+        margin: 15px auto;
         border-radius: 5px;
         transition: linear .2s;
     }
