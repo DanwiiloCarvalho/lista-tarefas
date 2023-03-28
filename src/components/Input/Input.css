@@ -28,6 +28,12 @@ div.input-group > input::placeholder {
     font-weight: 600;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 @media screen and (min-width: 768px) {
     div.input-group > label {
         font-size: 1.1rem;
