@@ -11,6 +11,7 @@ article.task {
 
 article.task > h3 {
     color: rgb(241, 102, 126);
+    font-size: 1.6rem;
 }
 
 article.task > p {
@@ -20,8 +21,29 @@ article.task > p {
 
 article.task > div.icons > span {
     color: white;
+    cursor: pointer;
 }
 
 article.task > div.icons > span:last-child {
     margin-left: 15px;
+}
+
+.material-symbols-outlined.bookmark {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.material-symbols-outlined.bookmark-completed {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.completed {
+    text-decoration: line-through;
 }

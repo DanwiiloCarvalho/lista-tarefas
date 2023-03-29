@@ -11,9 +11,10 @@ export function CreateButton({nameButton}) {
     function createTask() {
         if (title && duration) {
             const task = {
-                key: id,
+                id: id,
                 title: title,
-                duration: duration
+                duration: duration,
+                completed: false
             };
             setTasks(prevTasks => [...prevTasks, task]);
             setId(id + 1);
