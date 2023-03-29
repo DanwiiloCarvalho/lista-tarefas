@@ -1,10 +1,26 @@
+import { useContext, useState } from 'react';
+import { AppContext } from '../App';
+import { FormContext } from '../Form';
 import './CreateButton.css';
-import { Task } from '../Task';
 
-export function CreateButton({updateTasks, title, duration, nameButton}) {
-
+export function CreateButton({nameButton}) {
+    const {title, setTitle, duration, setDuration} = useContext(FormContext);
+    const {setTasks} = useContext(AppContext);
+    const [id, setId] = useState(1);
+    
     function createTask() {
-        updateTasks(title, duration);
+        if (title && duration) {
+            const task = {
+                key: id,
+                title: title,
+                duration: duration
+            };
+            setTasks(prevTasks => [...prevTasks, task]);
+            setId(id + 1);
+    
+            setTitle('');
+            setDuration('');
+        }
     }
 
     return (

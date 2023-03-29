@@ -4,17 +4,10 @@ import { Form } from '../Form';
 import { Todolist } from '../Todolist';
 import { createContext, useState } from 'react';
 
+export const AppContext = createContext();
+
 export function App() {
   const [tasks, setTasks] = useState([]);
-  const AppContext = createContext();
-
-  /* function updateTasks(title, duration) {
-    const newTask = {
-      title: title,
-      duration: duration
-    };
-    setTasks(prevTasks => [...prevTasks, newTask]);
-  } */
 
   return (
     <main id='container'>

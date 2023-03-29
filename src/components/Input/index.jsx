@@ -8,7 +8,7 @@ export function Input({id, labelText, placeholderText}) {
     return (
         <div className='input-group'>
             <label htmlFor="input">{labelText}</label>
-            <input id={id} type={id === 'duration' ? 'number' : 'text'} placeholder={placeholderText} onChange={e => id === 'title' ? setTitle(e.target.value) : setDuration(e.target.value)} />
+            <input id={id} type={id === 'duration' ? 'number' : 'text'} placeholder={placeholderText} onChange={e => id === 'title' ? setTitle(e.target.value) : setDuration(e.target.value)} value={id === 'title' ? title : duration} />
         </div>
     )
 }
